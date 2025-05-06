@@ -62,7 +62,11 @@ summary {
 
 /* reset of texinfo */
 div.example {
-  margin: 0;
+  background: lightgray;
+  color: black;
+  filter: invert(1);
+  margin: 0 0 2ch 0;
+  padding: 2ch 2ch 1ch;
 }
 
 #comments ol {
@@ -123,7 +127,7 @@ Previous: <a href="index.html" accesskey="p" rel="prev">Posts</a>, Up: <a href="
 <hr>
 <h2 class="chapter" id="New-blog-1"><span>1 New blog<a class="copiable-link" href="#New-blog-1"> &para;</a></span></h2>
 
-<p>Welcome to my new blog.  Since is a tradition to people talk about the stack
+<p>Welcome to my new blog.  Since it is a tradition to people talk about the stack
 they choose for their blogs, I&rsquo;ll follow the same path.
 </p>
 <ul class="mini-toc">
@@ -133,22 +137,20 @@ they choose for their blogs, I&rsquo;ll follow the same path.
 </ul>
 <div class="section-level-extent" id="Stack">
 <h3 class="section"><span>1.1 Stack<a class="copiable-link" href="#Stack"> &para;</a></span></h3>
-<p>There is nothing fancy
-here. Just some sexy old school software.
+<p>There is nothing fancy here. Just some sexy old school software.
 </p>
 <p>As expected, this is a static website.
 <a class="url" href="https://www.gnu.org/software/texinfo/">GNU Texinfo</a> were used to generate
-this pages.
+this pages. The Texinfo is for manuals, not for blogging, although, it nicely
+fits into my expectations.
 </p>
 </div>
 <div class="section-level-extent" id="Comments">
 <h3 class="section"><span>1.2 Comments<a class="copiable-link" href="#Comments"> &para;</a></span></h3>
 <p>The comment section is just mailing archive, there is a cron job that connects
-into my email over SMTP and fetch emails related to the post.
+into my email over IMAP and fetch emails related to the post.
 </p>
-<p>During the deployment of this site, filters are configured in my email client
-to automatically organize the emails into folders. And this folders are used to
-display the comments bellow.
+<p>I&rsquo;ll talk more about how it works in another post.
 </p>
 </div>
 <div class="section-level-extent" id="Look-and-feel">
@@ -157,18 +159,19 @@ display the comments bellow.
 <a class="url" href="https://w3m.sourceforge.net/">w3m</a>. You can try it out:
 </p>
 <div class="example user-bash">
-<pre class="example-preformatted">w3m https://maniero.me/New-blog.html
+<pre class="example-preformatted">w3m <span style="color:#FF0000">"https://maniero.me/New-blog.html"</span>
 </pre></div>
 
 <p>A fun fact about it is that while most of pages usually uses <code class="code">px</code> or
-<code class="code">rem</code> are commonly used, the unit measure used in this blog is <code class="code">ch</code>.
+<code class="code">rem</code> are commonly used, the unit measure used in this blog is <code class="code">ch</code>
+to keep a terminal-like look and feel.
 </p>
 </div>
 </div>
 
 
 
-<hr /><section id="comments"><h3>Commments:</h3><div class="comment-instruction"><details><summary>Add a comment</summary><p>Send a <b>plain-text</b> email using this link <a href="mailto:carlos@maniero.me?subject=blogpost: New blog">link</a> if your browser/OS supports <b>mailto</b>.</p><p>Alternatively, send an email using your email client as bellow:</p><table><tr><th>To:</th><th>Subject:</th></tr><tr><td>carlos@maniero.me</td><td>blogpost: New blog</td></tr></table><p>It may take a few minutes to this page to be updated.</p><p><strong>Note:</strong> Comments submitted via email will be publicly available on the blog.</p><p>Comments updated at: 2025-05-06 02:23:17 UTC</p></div></details><ol><li><div><strong>From: </strong>Carlos Maniero &lt;carlosmanie**@*****.***&gt;</div>
+<hr /><section id="comments"><h3>Commments:</h3><div class="comment-instruction"><details><summary>Add a comment</summary><p>Send a <b>plain-text</b> email using this link <a href="mailto:carlos@maniero.me?subject=blogpost: New blog">link</a> if your browser/OS supports <b>mailto</b>.</p><p>Alternatively, send an email using your email client as bellow:</p><table><tr><th>To:</th><th>Subject:</th></tr><tr><td>carlos@maniero.me</td><td>blogpost: New blog</td></tr></table><p>It may take a few minutes to this page to be updated.</p><p><strong>Note:</strong> Comments submitted via email will be publicly available on the blog.</p><p>Comments updated at: 2025-05-06 02:32:12 UTC</p></div></details><ol><li><div><strong>From: </strong>Carlos Maniero &lt;carlosmanie**@*****.***&gt;</div>
 <div><strong>Date: </strong>2025-05-05 23:25:12 UTC</div>
 <br/><div><pre>Sending a multipart email just to make a mess &eth;&#159;&#152;&#130;
 </pre></div><details><summary>Reply this comment.</summary><div class="reply-instruction"><p>You may reply <strong>publicly</strong> to this message via <strong>plain-text</strong> email using the following method:</p><p>Save the following mbox file, import it into your mail client, and reply-to-all from there: <a target="_blank" href="./mbox/CAF_W6eYteLsurH0piSKsHrtR0k9b6YDrXA2aOki8ZyP1Dgd6-Q@mail.gmail.com">mbox</a></p><p>Avoid top-posting and favor <a target="_blank" href="https://en.wikipedia.org/wiki/Posting_style#Interleaved_style">interleaved quoting</a>.</p></div></details></li><li><div><strong>From: </strong>Johnny Richard &lt;john**@*************.***&gt;</div>
